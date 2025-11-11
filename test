@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kantin Kita</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8e1;
+      color: #333;
+    }
+
+    header {
+      background-color: #d84315;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #ffe0b2;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 10px auto 20px;
+      line-height: 1.6;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .item {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      text-align: center;
+    }
+
+    .item img {
+      width: 100%;
+      border-radius: 8px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .item h3 {
+      margin: 10px 0 5px;
+      color: #bf360c;
+    }
+
+    .item p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #d84315;
+      color: white;
+      margin-top: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🍽️ Kantin Kita</h1>
+    <p>Kumpulan makanan lezat khas kantin kampus</p>
+  </header>
+
+  <section class="hero">
+    <h2>Selamat Datang!</h2>
+    <p>
+      Di sini kamu bisa menemukan berbagai makanan favorit dari kantin kampus — mulai dari nasi goreng, soto ayam, hingga camilan manis.
+    </p>
+  </section>
+
+  <section class="menu">
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=500" alt="Nasi Goreng">
+      <h3>Nasi Goreng Spesial</h3>
+      <p>Dengan telur mata sapi dan ayam suwir. Rp15.000</p>
+    </div>
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1627308595186-e6bb3671285d?w=500" alt="Soto Ayam">
+      <h3>Soto Ayam</h3>
+      <p>Kuah gurih segar dengan ayam suwir dan sambal khas. Rp12.000</p>
+    </div>
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=500" alt="Mie Goreng">
+      <h3>Mie Goreng Kampus</h3>
+      <p>Mie pedas manis dengan topping bakso dan sosis. Rp13.000</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Kantin Kita | Dibuat oleh Kelompok 3
+  </footer>
+
+</body>
+</html>
