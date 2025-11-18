@@ -8,11 +8,12 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #fafafa;
+      background: #f4f4f4;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background: #0057b8;
+      background: #0073e6;
       color: white;
       padding: 20px 40px;
       display: flex;
@@ -21,7 +22,6 @@
     }
     header h1 {
       margin: 0;
-      font-size: 28px;
     }
     nav a {
       color: white;
@@ -30,15 +30,14 @@
       font-weight: bold;
     }
     .hero {
-      background: url('https://images.unsplash.com/photo-1555992336-03a23c22a3d3') center/cover;
-      height: 320px;
+      background: url('https://images.unsplash.com/photo-1555992336-03a23c22a3d3?auto=format&fit=crop&w=1350&q=80') center/cover;
+      height: 300px;
       display: flex;
       justify-content: center;
       align-items: center;
       color: white;
-      text-shadow: 0 2px 12px rgba(0,0,0,0.6);
-      font-size: 40px;
-      font-weight: bold;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+      font-size: 36px;
     }
     .container {
       max-width: 900px;
@@ -48,13 +47,15 @@
     .about-section {
       background: white;
       padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
     h2 {
+      color: #0073e6;
       margin-top: 0;
-      color: #0057b8;
-      font-size: 26px;
+    }
+    ul {
+      margin-left: 20px;
     }
     .team {
       margin-top: 40px;
@@ -68,8 +69,8 @@
     .team-card {
       background: white;
       padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
       text-align: center;
     }
     .team-card img {
@@ -81,7 +82,7 @@
     }
     footer {
       margin-top: 60px;
-      background: #0057b8;
+      background: #0073e6;
       padding: 20px;
       color: white;
       text-align: center;
@@ -91,74 +92,71 @@
 </head>
 <body>
 
-<header>
-  <h1>UEats</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="menu.html">Menu</a>
-    <a href="about.html">About Us</a>
-  </nav>
-</header>
+  <header>
+    <h1>UEats</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About Us</a>
+    </nav>
+  </header>
 
-<div class="hero">
-  About UEats
-</div>
-
-<div class="container">
-  <div class="about-section">
-    <h2>Siapa Kami?</h2>
-    <p>
-      UEats adalah sebuah platform yang dirancang untuk membantu mahasiswa, dosen, dan seluruh warga Universitas Indonesia menemukan makanan terbaik di seluruh kantin UI. Mulai dari Kantin Psikologi, FISIP, FH, FEB, sampai Pocin—UEats hadir untuk menyatukan semua menu favorit dalam satu website yang mudah diakses.
-    </p>
-
-    <p>
-      Kami percaya bahwa makanan bukan hanya tentang mengisi perut, tetapi juga tentang pengalaman, kenyamanan, dan efisiensi—sesuatu yang sangat dibutuhkan mahasiswa UI di tengah kesibukan kuliah. Dengan UEats, kamu bisa melihat menu, harga, deskripsi makanan, dan rekomendasi tempat makan secara cepat tanpa harus muter-muter dulu.
-    </p>
-
-    <h2>Misi Kami</h2>
-    <ul>
-      <li>Membuat informasi menu kantin UI lebih mudah diakses.</li>
-      <li>Menghubungkan mahasiswa dengan pilihan makanan terbaik.</li>
-      <li>Menghemat waktu mahasiswa dalam memilih dan mencari tempat makan.</li>
-      <li>Mempromosikan kantin-kantin UI agar lebih dikenal dan didukung.</li>
-    </ul>
-
-    <h2>Kenapa UEats Dibuat?</h2>
-    <p>
-      Ide UEats lahir dari pengalaman mahasiswa yang sering bingung memilih makan apa, harga berapa, dan tersedia di kantin mana. Dengan mengumpulkan semua informasi dalam satu platform, UEats ingin membuat pengalaman kuliner di UI menjadi lebih simpel dan menyenangkan.
-    </p>
+  <div class="hero">
+    About UEats
   </div>
 
-  <div class="team">
-    <h2>Tim Kami</h2>
-    <div class="team-grid">
-      <div class="team-card">
-        <img src="https://i.pravatar.cc/150?img=12" />
-        <h3>Tuan (You)</h3>
-        <p>Frontend Developer</p>
-      </div>
-      <div class="team-card">
-        <img src="https://i.pravatar.cc/150?img=32" />
-        <h3>Member 1</h3>
-        <p>UI/UX Designer</p>
-      </div>
-      <div class="team-card">
-        <img src="https://i.pravatar.cc/150?img=24" />
-        <h3>Member 2</h3>
-        <p>Backend Developer</p>
-      </div>
-      <div class="team-card">
-        <img src="https://i.pravatar.cc/150?img=45" />
-        <h3>Member 3</h3>
-        <p>Content & Data</p>
+  <div class="container">
+    <div class="about-section">
+      <h2>Siapa Kami?</h2>
+      <p>
+        UEats adalah platform yang dibuat khusus untuk warga Universitas Indonesia. Kami bertujuan
+        untuk mengumpulkan informasi lengkap tentang menu di berbagai kantin UI, dari harga, deskripsi,
+        hingga rekomendasi makanan favorit.
+      </p>
+      <p>
+        Kami percaya bahwa kenyamanan makan sangat penting di lingkungan kampus. Dengan UEats, kamu
+        bisa cek menu dulu sebelum keluar, menghemat waktu, dan menemukan pilihan terbaik sesuai selera.
+      </p>
+
+      <h2>Misi Kami</h2>
+      <ul>
+        <li>Menyediakan informasi menu kantin UI secara jelas dan lengkap.</li>
+        <li>Membantu mahasiswa memilih makanan yang sesuai selera dan anggaran.</li>
+        <li>Meningkatkan visibilitas kantin-kantin di UI agar lebih banyak dikenali.</li>
+        <li>Membuat pengalaman kuliner kampus lebih efisien dan menyenangkan.</li>
+      </ul>
+
+      <h2>Tim UEats</h2>
+      <div class="team">
+        <div class="team-grid">
+          <div class="team-card">
+            <img src="https://i.pravatar.cc/150?img=12" alt="Tim Member 1" />
+            <h3>Tuan (Kamu)</h3>
+            <p>Frontend Developer</p>
+          </div>
+          <div class="team-card">
+            <img src="https://i.pravatar.cc/150?img=32" alt="Tim Member 2" />
+            <h3>Nama Teman 1</h3>
+            <p>UI / UX Designer</p>
+          </div>
+          <div class="team-card">
+            <img src="https://i.pravatar.cc/150?img=24" alt="Tim Member 3" />
+            <h3>Nama Teman 2</h3>
+            <p>Backend Developer</p>
+          </div>
+          <div class="team-card">
+            <img src="https://i.pravatar.cc/150?img=45" alt="Tim Member 4" />
+            <h3>Nama Teman 3</h3>
+            <p>Content & Data</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<footer>
-  © 2025 UEats — Universitas Indonesia Food Directory
-</footer>
+  <footer>
+    &copy; 2025 UEats — Direktori Menu Kantin UI
+  </footer>
 
 </body>
 </html>
