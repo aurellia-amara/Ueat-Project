@@ -1,2 +1,2 @@
 # Ueat-Project
-Website ini digunakan untuk memudahkan pengguna dalam memilih makanan kantin di setiap fakultas yang ada di UI
+Aplikasi ini dibuat dengan tujuan memudahkan mahasiswa Universitas Indonesia dalam mencari dan menemukan berbagai pilihan makanan yang tersedia di seluruh kantin kampus, sehingga mereka dapat dengan cepat memilih menu makan siang tanpa perlu berkeliling ke setiap kantin.
