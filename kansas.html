@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UEat - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/kansas.css">
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <div id="topbar">
+    <div id="topbar-left">
+      <button id="hamburgerBtn" aria-label="Toggle sidebar">☰</button>
+      <a href="/" style="color:#ffc107; text-decoration:none; font-family:'Alfa Slab One', serif; font-size:2.1rem;">UEat</a>
+    </div>
+    <div id="navbar">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <div id="sidebar">
+    <img id="sideLogo" src="images/logo.png" alt="UEat Logo" />
+    <div id="facultyList"></div>
+  </div>
+
+  <!-- Main Content -->
+  <div id="content">
+  <h1 class="page-title">Kansas — Kantin Sastra</h1>
+
+  <div class="menu-grid">
+
+    <div class="menu-card">
+      <img src="images/kansas/Thai-Iced-Tea-in-Plastic-Cup.jpg" alt="Food 1">
+      <h2>Thai Tea Abun</h2>
+      <p>Minuman yang agak "jarang" ditemuin di kantin UI.</p>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/kansas/Resep-Tongseng-kambing.webp" alt="Food 1">
+      <h2>Tongseng FIB</h2>
+      <p>TONGSENG KECINTAAN ANAK-ANAK FIB INI!!</p>
+      <div class="item-tag">BEST SELLER</div>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/kansas/60e3ef91620b7.jpg" alt="Food 1">
+      <h2>Pecel Mas Roni</h2>
+      <p>Pecel yang kaya rasa-nya.</p>
+    </div>
+
+
+
+    
+
+  </div>
+</div>
+
+<script>
+  const faculties = [
+    "Faculty of Medicine",
+    "Faculty of Dentistry",
+    "Faculty of Nursing",
+    "Faculty of Pharmacy",
+    "Faculty of Mathematics and Natural Sciences",
+    "Faculty of Engineering",
+    "Faculty of Computer Science",
+    "Faculty of Law",
+    "Faculty of Economics and Business",
+    "Faculty of Social and Political Sciences",
+    "Faculty of Humanities",
+    "Faculty of Psychology",
+    "Faculty of Administrative Sciences",
+    "Faculty of Public Health",
+    "Vocational Education Program"
+  ];
+
+  const listContainer = document.getElementById("facultyList");
+
+  faculties.forEach(fac => {
+    const link = document.createElement("a");
+
+    // Default semua fakultas → comingSoon.html
+    let targetFile = "comingSoon.html";
+
+    // Khusus Vocational
+    if (fac === "Vocational Education Program") {
+      targetFile = "vocation.html";
+    }
+
+    // Khusus Psychology
+    if (fac === "Faculty of Psychology") {
+      targetFile = "psychology.html";
+    }
+
+    if (fac === "Faculty of Social and Political Sciences") {
+      targetFile = "fisip.html";
+    }
+
+    if (fac === "Faculty of Humanities") {
+      targetFile = "kansas.html";
+    }
+    
+    if (fac === "Faculty of Mathematics and Natural Sciences") {
+      targetFile = "dalas.html";
+    }
+    
+
+    link.href = targetFile;
+    link.textContent = fac;
+    listContainer.appendChild(link);
+  });
+
+  // Sidebar toggle mobile
+  const hamburgerBtn = document.getElementById("hamburgerBtn");
+  const sidebar = document.getElementById("sidebar");
+
+  hamburgerBtn.addEventListener("click", () => {
+    if (window.innerWidth <= 768) {
+      sidebar.classList.toggle("show");
+    }
+  });
+
+  window.addEventListener("click", function(e) {
+    if (window.innerWidth <= 768 && sidebar.classList.contains("show")) {
+      if (!sidebar.contains(e.target) && !hamburgerBtn.contains(e.target)) {
+        sidebar.classList.remove("show");
+      }
+    }
+  });
+</script>
+
+
+
+
+
+</body>
+</html>
