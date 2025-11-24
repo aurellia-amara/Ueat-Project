@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UEat</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <div class="hero">
+        <div class="overlay"></div>
+
+        <div class="content">
+            <h1 class="title">UEat</h1>
+            <p class="subtitle">Find It. Eat It. Love It. UEat.</p>
+
+            <div class="nav-buttons">
+                <a href="home.html">HOME</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
