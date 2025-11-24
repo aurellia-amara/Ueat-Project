@@ -1,1 +1,191 @@
+body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('../images/page2.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100vw;
+        height: 100vh;
+      }
+    #topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #36591b;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 2000;
+    }
+    #topbar-left {
+      margin-left: 20px;
+      font-family: "Alfa Slab One", serif;
+      font-size: 2.1rem;
+      color: #ffc107;
+      display: flex;
+      align-items: center;
+    }
+    #hamburgerBtn {
+      font-size: 2.1rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #111;
+      margin-right: 10px;
+      display: none; /* hanya muncul di mobile */
+    }
+    #navbar {
+      margin-right: 30px;
+      display: flex;
+      align-items: center;
+    }
+    #navbar a {
+      color: #111;
+      font-family: "Alfa Slab One", serif;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 1rem;    /* diperkecil */
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+    #navbar a:hover {
+      color: #ffffff;
+    }
+    #sidebar {
+      width: 210px;
+      background: #1b5e20;
+      color: white;
+      padding: 16px;
+      height: 100vh;
+      overflow: hidden;
+      position: fixed;
+      left: 0;
+      top: 70px;
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 2500;
+      transform: translateX(0);
+    }
+    #sideLogo {
+      width: 120px; /* logo diperbesar */
+      height: auto;
+      object-fit: contain;
+      margin-bottom: 15px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #facultyList {
+      width: 100%;
+      flex: 1 1 0%;
+      overflow-y: auto;
+      margin-top: 4px;
+      padding-right: 2px;
+      max-height: 70vh;
+    }
+    #sidebar a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin: 8px 0;
+      font-size: 1rem;
+      padding-left: 5px;
+    }
+    #sidebar a:hover {
+      color: #FFC107;
+    }
+    #content {
+      margin-left: 210px;
+      padding: 40px 40px 40px 60px;
+      font-family: "Alfa Slab One", serif;
+      margin-top: 70px;
+      transition: margin-left 0.3s;
+    }
 
+    .main-text {
+      text-align: center;
+      margin-top: 130px;
+    }
+    .main-text h1 {
+      font-family: 'Alfa Slab One', serif;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: white; /* seluruhnya warna putih */
+      text-shadow: 2.5px 2.5px 7px rgba(0,0,0,0.20);
+      line-height: 1.25;
+      margin: 0 auto;
+      letter-spacing: 1.5px;
+    }
+
+    @media (max-width: 768px) {
+      #hamburgerBtn {
+        display: block;
+      }
+      #navbar {
+        display: flex; /* tampilkan navbar di mobile */
+      }
+      #navbar a {
+        font-size: 0.9rem; /* lebih kecil di mobile */
+      }
+      #sidebar {
+        width: 65vw;
+        min-width: 140px;
+        max-width: 95vw;
+        padding: 12px 4px;
+        left: 0;
+        top: 55px;
+        height: calc(100vh - 55px);
+        transform: translateX(-100%);
+        position: fixed;
+        z-index: 2500;
+        transition: transform 0.3s ease;
+      }
+      #sidebar.show {
+        transform: translateX(0);
+      }
+      #sideLogo {
+        width: 100px; /* logo lebih kecil di mobile */
+        height: auto;
+        margin-bottom: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #facultyList {
+        max-height: 60vh;
+      }
+      #content {
+        margin-left: 0;
+        padding: 22px 9px 22px 9px;
+        margin-top: 110px;
+        box-sizing: border-box;
+        transition: none;
+      }
+      .main-text h1 {
+        font-size: 1.18rem;
+        padding: 0 8px;
+      }
+      .main-text {
+        margin-top: 60px;
+      }
+    }
+    @media (min-width: 769px) {
+      #sidebar {
+        transform: translateX(0) !important;
+      }
+      #sidebar.show {
+        transform: translateX(0) !important;
+      }
+      #hamburgerBtn {
+        display: none !important;
+      }
+      #navbar {
+        display: flex !important;
+      }
+    }
